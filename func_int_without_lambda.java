@@ -1,4 +1,4 @@
-public class func_interface_without_lambda {
+public class func_int_without_lambda {
 
 
     @FunctionalInterface
@@ -7,13 +7,13 @@ public class func_interface_without_lambda {
         void vehicle(String veh_name);
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Functional_interface fi =new Functional_interface() {
             @Override
             public void vehicle(String veh_name) {
                 System.out.print("Vehicle is : "+ veh_name);
             }
-        }
+        };
         fi.vehicle("car");
     }
 
